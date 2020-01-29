@@ -1,8 +1,7 @@
 # kaen2891.github.io
-Github Blog demonstration
+Checking the result.
 
 <audio controls="controls">
-  <source type="audio/mp3" src="audio/output_ckpt300_testset_0th_.wav"></source>
-  <source type="audio/ogg" src="filename.ogg"></source>
+  <source type="audio/wav" src="audio/output_ckpt300_testset_0th_.wav"></source>  
   <p>Your browser does not support the audio element.</p>
 </audio>
