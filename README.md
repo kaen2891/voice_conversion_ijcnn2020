@@ -1,7 +1,10 @@
 # Sample results
-## Domain is Girl's voice
+The first column is Source voice, second is Target voice, and Last is Predicted voice
 
-Saying 'Three'
+## First domain voice : Girl
+
+### When the target voice is Man's voice.
+#### Saying 'Three'
 
 <audio controls="controls">
   Girl to Man (source)
@@ -21,8 +24,7 @@ Saying 'Three'
   <p>predict.</p>
 </audio>
 
-
-Saying 'Seven'
+#### Saying 'Seven'
 
 <audio controls="controls">
   Girl to Man (source)
@@ -42,8 +44,7 @@ Saying 'Seven'
   <p>predict.</p>
 </audio>
 
-
-Saying 'Nine'
+#### Saying 'Nine'
 
 <audio controls="controls">
   Girl to Man (source)
@@ -63,8 +64,7 @@ Saying 'Nine'
   <p>predict.</p>
 </audio>
 
-
-Saying 'Zero'
+#### Saying 'Zero'
 
 <audio controls="controls">
   Girl to Man (source)
@@ -81,5 +81,88 @@ Saying 'Zero'
 <audio controls="controls">
   Girl to Man (predict)
   <source type="audio/wav" src="audio/G2M_P4(zero).wav"></source>
+  <p>predict.</p>
+</audio>
+
+
+### When the target voice is Woman's voice.
+
+#### Saying 'Two'
+
+<audio controls="controls">
+  Girl to Man (source)
+  <source type="audio/wav" src="audio/G2W_S1(two).wav"></source>
+  <p>source.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (target)
+  <source type="audio/wav" src="audio/G2W_T1(two).wav"></source>
+  <p>target.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (predict)
+  <source type="audio/wav" src="audio/G2W_P1(two).wav"></source>
+  <p>predict.</p>
+</audio>
+
+#### Saying 'Five'
+
+<audio controls="controls">
+  Girl to Man (source)
+  <source type="audio/wav" src="audio/G2W_S2(five).wav"></source>
+  <p>source.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (target)
+  <source type="audio/wav" src="audio/G2W_T2(five).wav"></source>
+  <p>target.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (predict)
+  <source type="audio/wav" src="audio/G2W_P2(five).wav"></source>
+  <p>predict.</p>
+</audio>
+
+#### Saying 'Eight'
+
+<audio controls="controls">
+  Girl to Man (source)
+  <source type="audio/wav" src="audio/G2W_S3(eight).wav"></source>
+  <p>source.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (target)
+  <source type="audio/wav" src="audio/G2W_T3(eight).wav"></source>
+  <p>target.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (predict)
+  <source type="audio/wav" src="audio/G2W_P3(eight).wav"></source>
+  <p>predict.</p>
+</audio>
+
+#### Saying 'Oh'
+
+<audio controls="controls">
+  Girl to Man (source)
+  <source type="audio/wav" src="audio/G2W_S4(oh).wav"></source>
+  <p>source.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (target)
+  <source type="audio/wav" src="audio/G2W_T4(oh).wav"></source>
+  <p>target.</p>
+</audio>
+
+<audio controls="controls">
+  Girl to Man (predict)
+  <source type="audio/wav" src="audio/G2W_P4(oh).wav"></source>
   <p>predict.</p>
 </audio>
