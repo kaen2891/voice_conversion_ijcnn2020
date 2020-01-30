@@ -31,13 +31,13 @@ Saying 'Seven'
 </audio>
 
 <audio controls="controls">
-  Girl to Man (source)
+  Girl to Man (target)
   <source type="audio/wav" src="audio/G2M_T2(seven).wav"></source>
   <p>target.</p>
 </audio>
 
 <audio controls="controls">
-  Girl to Man (source)
+  Girl to Man (predict)
   <source type="audio/wav" src="audio/G2M_P2(seven).wav"></source>
   <p>predict.</p>
 </audio>
@@ -52,13 +52,13 @@ Saying 'Nine'
 </audio>
 
 <audio controls="controls">
-  Girl to Man (source)
+  Girl to Man (target)
   <source type="audio/wav" src="audio/G2M_T3(Nine).wav"></source>
   <p>target.</p>
 </audio>
 
 <audio controls="controls">
-  Girl to Man (source)
+  Girl to Man (predict)
   <source type="audio/wav" src="audio/G2M_P3(Nine).wav"></source>
   <p>predict.</p>
 </audio>
@@ -73,13 +73,13 @@ Saying 'Zero'
 </audio>
 
 <audio controls="controls">
-  Girl to Man (source)
+  Girl to Man (target)
   <source type="audio/wav" src="audio/G2M_T4(Zero).wav"></source>
   <p>target.</p>
 </audio>
 
 <audio controls="controls">
-  Girl to Man (source)
+  Girl to Man (predict)
   <source type="audio/wav" src="audio/G2M_P4(Zero).wav"></source>
   <p>predict.</p>
 </audio>
