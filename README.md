@@ -26,7 +26,7 @@ Saying 'Seven'
 
 <audio controls="controls">
   Girl to Man (source)
-  <source type="audio/wav" src="audio/G2M_S1(seven).wav"></source>
+  <source type="audio/wav" src="audio/G2M_S2(seven).wav"></source>
   <p>source.</p>
 </audio>
 
