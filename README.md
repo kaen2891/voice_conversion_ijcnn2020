@@ -9,19 +9,20 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
 <audio controls="controls">
   Girl to Man (source)
   <source type="audio/wav" src="audio/G2M_S1(three).wav"></source>
-  <p>source.</p>
+  <source type="audio/ogg" src="filename.ogg"></source>
+  <p>Source input = Girl.</p>
 </audio>
 
 <audio controls="controls">
   Girl to Man (target)
   <source type="audio/wav" src="audio/G2M_T1(three).wav"></source>
-  <p>target.</p>
+  <p>Target input = Man.</p>
 </audio>
 
 <audio controls="controls">
   Girl to Man (predict)
   <source type="audio/wav" src="audio/G2M_P1(three).wav"></source>
-  <p>predict.</p>
+  <p>Predict result.</p>
 </audio>
 
 #### Saying 'Seven'
