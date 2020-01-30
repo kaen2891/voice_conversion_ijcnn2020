@@ -2,11 +2,11 @@
 Checking the result.
 
 <audio controls="controls">
-  <source type="audio/wav" src="audio/G2M_S1(three)"></source>
+  <source type="audio/wav" src="audio/G2M_S1(three).wav"></source>
   <p>source.</p>
-  <source type="audio/wav" src="audio/G2M_T1(three)"></source>
+  <source type="audio/wav" src="audio/G2M_T1(three).wav"></source>
   <p>target.</p>
-  <source type="audio/wav" src="audio/G2M_P1(three)"></source>
+  <source type="audio/wav" src="audio/G2M_P1(three).wav"></source>
   <p>predict.</p>
 </audio>
 
