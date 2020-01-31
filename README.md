@@ -1,9 +1,16 @@
-# Sample results
-The first column is Source voice, second is Target voice, and Last is Predicted voice.
-======================================================================================
+# Sample results from "Vocoder-free End-to-End Voice Conversion with Transformer Network"
+
+
+#### Authors: June-Woo Kim, Ho-Young Jung, Minho Lee
+
+#### Abstract: Mel-frequency filter bank (MFB) based approaches have the advantage of learning speech compared to raw spectrum since MFB has less feature size. However, speech generator with MFB approaches require additional vocoder that needs a huge amount of computation expense for training process. The additional pre/post processing such as MFB and vocoder is not essential to convert real human speech to others. It is possible to only use the raw spectrum along with the phase to generate different style of voices with clear pronunciation. In this regard, we propose a fast and effective approach to convert realistic voices using raw spectrum in a parallel manner. Our transformer-based model architecture which does not have any CNN or RNN layers has shown the advantage of learning fast and solved the limitation of sequential computation of conventional RNN. In this paper, we introduce a vocoder-free end-to-end voice conversion method using transformer network. The presented conversion model can also be used in speaker adaptation for speech recognition. Our approach can convert the source voice to a target voice without using MFB and vocoder. We can get an adapted MFB for speech recognition by multiplying the converted magnitude with phase. We perform our voice conversion experiments on TIDIGITS dataset using the metrics such as naturalness, similarity, and clarity with mean opinion score, respectively.
+
+
+## The first column is Source voice, second is Target voice, and Last is Predicted voice.
+
 ## First domain voice : Girl
 
-### When the target voice is Man's voice.
+### Source: Girl, Target: Man, Result: Converted Man
 
 #### Saying 'Three'
 
@@ -85,7 +92,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
+### Source: Girl, Target: Woman, Result: Converted Woman
 
 ### When the target voice is Woman's voice.
 
@@ -169,9 +176,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Boy's voice.
+### Source: Girl, Target: Boy, Result: Converted Boy
 
 #### Saying 'Four'
 
@@ -253,11 +258,9 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
-======================================================================================
-
 ## Second domain voice : Boy
 
-### When the target voice is Man's voice.
+### Source: Boy, Target: Man, Result: Converted Man
 
 #### Saying 'Four'
 
@@ -339,9 +342,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Woman's voice.
+### Source: Boy, Target: Woman, Result: Converted Man
 
 #### Saying 'One'
 
@@ -423,9 +424,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Girl's voice.
+### Source: Boy, Target: Girl, Result: Converted Girl
 
 #### Saying 'Two'
 
@@ -507,11 +506,9 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
-======================================================================================
-
 ## Third domain voice : Woman
 
-### When the target voice is Man's voice.
+### Source: Woman, Target: Man, Result: Converted Man
 
 #### Saying 'One'
 
@@ -593,9 +590,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Boy's voice.
+### Source: Woman, Target: Boy, Result: Converted Boy
 
 #### Saying 'Four'
 
@@ -677,9 +672,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Girl's voice.
+### Source: Woman, Target: Girl, Result: Converted Girl
 
 #### Saying 'Four'
 
@@ -761,11 +754,9 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
-======================================================================================
-
 ## Fourth domain voice : Man
 
-### When the target voice is Woman's voice.
+### Source: Man, Target: Woman, Result: Converted Woman
 
 #### Saying 'Three'
 
@@ -847,9 +838,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Boy's voice.
+### Source: Man, Target: Boy, Result: Converted Boy
 
 #### Saying 'One'
 
@@ -931,9 +920,7 @@ The first column is Source voice, second is Target voice, and Last is Predicted 
   <p>predict.</p>
 </audio>
 
---------------------------------------------------------------------------------------
-
-### When the target voice is Girl's voice.
+### Source: Man, Target: Girl, Result: Converted Girl
 
 #### Saying 'Three'
 
