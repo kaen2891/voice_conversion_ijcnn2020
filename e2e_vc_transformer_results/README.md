@@ -94,7 +94,7 @@
 
 ### Source: Girl, Target: Woman, Result: Converted Woman
 
-### When the target voice is Woman's voice.
+
 
 #### Saying 'Two'
 
@@ -342,7 +342,7 @@
   <p>predict.</p>
 </audio>
 
-### Source: Boy, Target: Woman, Result: Converted Man
+### Source: Boy, Target: Woman, Result: Converted Woman
 
 #### Saying 'One'
 
