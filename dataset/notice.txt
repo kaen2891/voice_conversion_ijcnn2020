@@ -1,0 +1,1 @@
+The "TIDIGITS" dataset is not an open dataset. In order to use this dataset, you must purchase a license from the LDC. We are sorry that we cannot share for this reason. (https://catalog.ldc.upenn.edu/LDC93S10)
