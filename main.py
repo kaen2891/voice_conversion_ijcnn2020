@@ -22,7 +22,7 @@ parser.add_argument('--num_dec', type=int, default='6', help='number of decoder 
 parser.add_argument('--d_model', type=int, default='256', help='number of hidden size (frequency sizes)')
 parser.add_argument('--num_heads', type=int, default='8', help='number of multihead attentions')
 parser.add_argument('--dff', type=int, default='1024', help='number of feed forward network sizes')
-parser.add_argument('--max_sequence_length', type=int, default='438', help='number of max sequence size')
+parser.add_argument('--max_sequence_length', type=int, default='121', help='number of max sequence size')
 parser.add_argument('--dropout_rate', type=float, default='0.1', help='number of max sequence size')
 parser.add_argument('--lr', type=float, default='0', help='initial learning rate')
 parser.add_argument('--hop', type=int, default='256', help='number of noverlap')
@@ -217,8 +217,11 @@ def main():
         return predict_spec, attention_weight
 
 
+    train_begin = 0
+    train_elapsed = 0
+    train_start = train_begin = time.time()
     for epoch in range(EPOCHS):
-        start = time.time()
+        start = epoch_begin = time.time()
         
         train_loss.reset_states()        
 
@@ -232,7 +235,12 @@ def main():
             result, attention_weight = train_step(inp_spec, dec_spec, tar_spec)
 
             if batch % 20 == 0:
-                print('Epoch {} Batch {} Loss {:.4f} '.format(epoch + 1, batch, train_loss.result()))
+                current = time.time()
+                elapsed = current - start
+                #epoch_elapsed = (current - epoch_begin) / 60.0
+                #train_elapsed = (current - train_begin) / 3600.0
+                train_elapsed = (current - train_start) / 3600.0 
+                #print('Epoch {} Batch {} Loss {:.4f}, train elapsed: {:.2f}h '.format(epoch + 1, batch, train_loss.result(), train_elapsed))
 
         if (epoch + 1) % 20 == 0:
             ckpt_save_path = ckpt_manager.save()
@@ -243,7 +251,7 @@ def main():
 
         tf.summary.scalar('loss', data=train_loss.result(), step=epoch)
 
-        print('Time taken for 1 epoch: {} secs\n'.format(time.time() - start))
+        print('Time taken for 1 epoch: {} secs, elapsed: {:.2f}h \n'.format(time.time() - start, train_elapsed))
 
         if epoch % 20 == 0:
             spec_t = inp_spec[0]
@@ -317,7 +325,7 @@ def main():
             plt.figure(figsize=(10, 4))
             librosa.display.specshow(librosa.amplitude_to_db(save_tar, ref=np.max), y_axis='hz', x_axis='time',
                                      sr=16000, hop_length=args.hop)
-            real_name = 'real_epoch={}'.format(epc_before)
+            real_name = 'real_epoch={}'.format(int(epoch))
             plt.title(real_name)
             plt.colorbar(format='%+2.0f dB')
             plt.tight_layout()
